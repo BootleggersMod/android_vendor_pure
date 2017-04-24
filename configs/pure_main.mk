@@ -43,8 +43,7 @@ PRODUCT_PACKAGES += \
     Busybox \
     ThemeInterfacer \
     OmniStyle \
-    Turbo \
-    Gallery2
+    Turbo 
 
 # More Derps
 PRODUCT_PACKAGES += \
@@ -60,3 +59,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
+    
+    # Inherit shishu stuff
+$(call inherit-product-if-exists, vendor/bootleggers/booty.mk)
